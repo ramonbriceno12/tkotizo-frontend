@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Kodakku';
+  src: url('fonts/kodakku/kodakku.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-kodakku: 'Kodakku', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: #171717;
+  background: white;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+.profile-dropdown {
+  right: 115px;
+}
+
+@media (max-width: 767px) {
+  .profile-dropdown {
+      right: 115px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
